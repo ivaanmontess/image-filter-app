@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Image Filter App My King~</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <h1 class="text-3x1 font-bold mb-4">Filtros para Imágenes</h1>
+
+    <input type="file" id="upload" aceept="image/*" class="mb-4 file:mr-4 file:py-2 file:px-4 file:rounded.full file:border-0 file:text-sm file:font-semibold file:bg-indigo-500 file:text-white hover:file:bg-indigo-700"/>
+    
+    <canvas id="canvas" class="border border-gray-700 rounded-lg shadow-lg mb-4 max-w-full"></canvas>
+
+    <div class="flex flex-wrap gap-2 justify-center mb-4">
+        <button class="filter-btn" data-filter="grayscale">Blanco y Negro</button>
+        <button class="filter-btn" data-filter="sepia">Sepia</button>
+        <button class="filter-btn" data-filter="brightness">Brillo</button>
+        <button class="filter-btn" data-filter="constrast">Contraste</button>
+        <button class="filter-btn" data-filter="none">Sin filtro pa</button>
+
+    </div>
+
+    <button id="download" class="bg-green-600 hover:bg-green-800 px-6 py-2 rounded-lg">Descargar Imagen</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
